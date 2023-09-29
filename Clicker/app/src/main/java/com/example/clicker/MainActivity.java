@@ -13,11 +13,12 @@ public class MainActivity extends AppCompatActivity {
     Button klik1;
 
     Button klik2;
+
     TextView tekst;
 
-    Integer mati = 0;
+    Integer ilosc = 0;
 
-    Integer xd = 1;
+    Integer amount = 1;
     Switch zmiana;
 
     @Override
@@ -26,17 +27,22 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         klik1 = findViewById(R.id.button);
+
         klik2 = findViewById(R.id.button2);
+
         tekst = findViewById(R.id.textView);
+
         zmiana = findViewById(R.id.switch1);
 
 
         klik1.setOnClickListener(new View.OnClickListener() {
+
             @Override
+
             public void onClick(View view) {
 
-                mati = mati + xd;
-                tekst.setText("Kliknięcia: " + mati);
+                ilosc = ilosc + amount;
+                tekst.setText("Kliknięcia: " + ilosc);
 
             }
         });
@@ -44,8 +50,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                mati = 0;
-                tekst.setText("Kliknięcia: " + mati);
+                ilosc = 0;
+                tekst.setText("Kliknięcia: " + ilosc);
 
 
             }
@@ -58,10 +64,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
                 if(zmiana.isChecked()){
-                    xd = -1;
+                    amount = -1;
                 } else
                 {
-                    xd = 1;
+                    amount = 1;
                 }
 
             }
