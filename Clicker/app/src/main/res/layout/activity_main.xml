@@ -11,8 +11,9 @@
         android:id="@+id/textView"
         android:layout_width="411dp"
         android:layout_height="137dp"
-        android:background="#2596be"
-        android:text="Kliknięcia:"
+        android:background="#CA40C1"
+        android:text="Klikniecia:"
+        android:padding="35dp"
         android:textAlignment="center"
         android:textSize="50sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,44 +21,50 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.676"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="303dp"
-        android:layout_height="213dp"
-        android:backgroundTint="#00FF00"
+        android:layout_width="268dp"
+        android:layout_height="178dp"
+        android:backgroundTint="#093CA1"
         android:text="Kliknij mnie"
         android:textSize="40sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.22" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.113"
+        tools:ignore="HardcodedText" />
+
     <Button
         android:id="@+id/button2"
         android:layout_width="313dp"
         android:layout_height="61dp"
         android:layout_marginTop="44dp"
+        android:backgroundTint="#0FF22D"
         android:text="Reset"
-        android:backgroundTint="#FF0000"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.881" />
+        app:layout_constraintVertical_bias="0.88"
+        tools:ignore="HardcodedText" />
 
     <Switch
         android:id="@+id/switch1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Zmień"
-        android:textColor="#2596be"
+        android:textColor="#F2A60F"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.253" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.399"
+        tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
